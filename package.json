@@ -1,0 +1,19 @@
+{
+  "name": "mma-vercel-product-robot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "check": "node --check api/index.js && node --check api/discover.js && node --check api/product.js && node --check api/sync.js && node --check api/cron.js && node --check lib/sources/mma-bg.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  },
+  "devDependencies": {
+    "vercel": "^44.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
